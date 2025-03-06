@@ -4,7 +4,7 @@ class Player:
   def __init__(self):
     self.health = 100
     self.attackv = 5
-  def attack(self, target: Player):
+  def attack(self, target: "Player"):
     target.update(health=target.health-self.attack)
   def regen(self):
     self.update(health=self.health+10)
